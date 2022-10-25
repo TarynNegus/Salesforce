@@ -1,0 +1,25 @@
+public class Mission5_TarynNegus {
+    
+    public static void numbersList(){
+     
+        List<Integer> input = new List<Integer>{12, 20, 30, 17};	//new list called "input" created with integer values 12, 20, 30, 17
+        
+        System.debug(input);    
+            
+       	for(Integer n : input){										//for loop runs through each item in the "input" list
+    		If (math.mod(n,3) == 0 && math.mod(n,5) == 0){			//checks if the modulus when dividing by 3 and 5 is zero and if true
+            	System.debug('DingDong');							//returns a display "DingDong"
+        	}
+        	else if (math.mod(n,3) == 0){							//checks if the modulus when dividing by 3 is zero and if true
+            	System.debug('Ding');								//returns a display "Ding"
+        	}
+            else if (math.mod(n,5) == 0){							//checks if the modulus when dividing by 5 is zero and if true
+            	System.debug('Dong');								//returns a display "Dong"
+        	}
+        	else{
+            	System.debug(n);
+       		}
+		}
+    }
+    
+}
